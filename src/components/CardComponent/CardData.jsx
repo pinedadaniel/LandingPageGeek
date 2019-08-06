@@ -113,71 +113,19 @@ class CardData extends React.Component {
         }
     }
 
-    //El componente DidMount Excelente lugar para
-    //cargar nuestra data que llega externa de un API
-    //Es el tercer método que se ejecuta
-    componentDidMount() {
-        console.log('3. componentDidMount()');
-        //simular peticion asincrona, decimos que en 3000 milisegundos
-        //se actualice el estado con los datos que deseo mostrar
-        //en pantalla
-
-        //2. setTimeout retorna un timeoutID
-        this.timeoutId = setTimeout(() => {
-            this.setState({
-
-            })
-        });
-
-    }
-
-    //recibe dos argumentos los props que se tenian antes y el segundo
-    //el state que tenía antes
-    componentDidUpdate(prevProps, prevState) {
-        console.log('5. componenteDidUpdate()');
-        //imprimiendo los valores que tenia antes
-        //y los nuevos valores
-        console.log({
-            prevProps: prevProps,
-            prevState: prevState
-        });
-        //comparando con los nuevos valores
-        console.log({
-            props: this.props,
-            state: this.state
-        })
-    }
-
-    //Ultimo componente, es el que ocurre ANTES de que se vaya
-    //nuestro componente de pantalla (DEL DOM),
-    //Detalle importante! debo garantizar si me muevo a otro lugar
-    //parar la llamada ASINCRONA!, ya que el componente se fue es un ERROR COMUN
-
-    componentWillUnmount() {
-        console.log('6. componentWillUnMount()');
-        //el timeoutID nos sirve para llamar otra funcion
-        //llamada clearTimeout()
-        //si el id existe y el trabajo esta pendiente lo CANCELA 
-        clearTimeout(this.timeoutId);
-    }
-
     render() {
         console.log('2/4. render()');
         return (
 
-            <div>
-                <div className="container">
-                    <div className="row">
+            <div className="row  py-5 px-3 ">
 
-                        {this.state.data.map(
-                            (cosa, i) => {
-                                return (
-                                    <Card card={this.state.data[i]} />
-                                )
-                            }
-                        )}
-                    </div>
-                </div>
+                {this.state.data.map(
+                    (cosa, i) => {
+                        return (
+                            <Card card={this.state.data[i]} />
+                        )
+                    }
+                )}
             </div>
 
 

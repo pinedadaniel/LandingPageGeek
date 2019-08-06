@@ -6,7 +6,7 @@ import Layout from './Layout';
 import Hero from './HeroComponent/Hero';
 import CardData from './CardComponent/CardData';
 import Aliados from './AliadosComponent/Aliados';
-
+import Faq from './FaqComponent/Faq';
 
 const App = () => {
     return (
@@ -15,8 +15,8 @@ const App = () => {
             <Layout>
                 <Hero />
                 <CardData />
-
                 <Aliados />
+                <Faq />
             </Layout>
 
         </BrowserRouter>
