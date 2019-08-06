@@ -1,20 +1,21 @@
-    
+
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Layout from './Layout';
-//importamoos las paginas
+//importamoos las paginasimport 
+import Hero from './HeroComponent/Hero'
 
 
 
 const App = () => {
     return (
-        
-        <BrowserRouter>     
+
+        <BrowserRouter>
             <Layout>
                 <Switch>
-                    
-                </Switch> 
-            </Layout>          
+                    <Hero />
+                </Switch>
+            </Layout>
         </BrowserRouter>
     );
 }
