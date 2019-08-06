@@ -1,0 +1,69 @@
+.btn-language{
+    margin-right: 2vh;
+}
+.btn-language-eu{
+    font-family: '';
+}
+body{
+
+    list-style:none;
+}
+
+#header{
+
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+
+}
+
+#brand{
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+@media only screen and (max-width: 1283px) and (min-width: 991px)    {  
+    .buscador{
+        display: none;
+            }
+}
+
+
+.btn-contac:hover{
+    background: white;
+
+}
+
+#contItem li a{
+
+    font-size: 2.7vh;
+  
+    font-weight: 600;
+    position: relative;
+
+    color:gray;
+    margin: 0px 8px;
+
+}
+#contItem li a:hover{
+  color: turquoise !important;
+
+}
+
+#contItem li a:after{
+    position: absolute;
+    bottom: 7px;
+    left: 0px;
+    width: 100%;
+    height: 4px;
+    background-color: turquoise;
+    content: "";
+    opacity: 0;
+    transition: opacity 0.3s ease 0s, transform 0.3s ease 0s;
+    transform: translateY(20px);        
+}
+#contItem li a:hover:after{
+    opacity:1;
+    transform: translateY(15px);
+
+}
