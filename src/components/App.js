@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Layout from './Layout';
 //importamoos las paginasimport 
 import Hero from './HeroComponent/Hero'
+import Aliados from './AliadosComponent/Aliados'
 
 
 
@@ -12,9 +13,10 @@ const App = () => {
 
         <BrowserRouter>
             <Layout>
-                <Switch>
-                    <Hero />
-                </Switch>
+
+                <Hero />
+                <Aliados />
+
             </Layout>
         </BrowserRouter>
     );
