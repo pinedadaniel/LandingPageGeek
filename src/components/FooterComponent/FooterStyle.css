@@ -1,4 +1,44 @@
 footer{
-    position: absolute;
-    top: 99vh;
+    background: #03203a;
+}
+
+.textFooterTittle{
+color:white;
+
+font-size: 2vw;
+    
+}
+.textFooterP{
+color: white;
+
+}
+.linkstittleFooter{
+    color: white;
+
+}
+
+hr{
+   
+    background:gray;
+}
+
+
+.politics{
+    color: white;
+
+    font-size: 1.1vw;
+}
+.Copyright{
+    color: white;
+
+}
+.linkFooter{
+    color: white;
+    text-decoration: none;
+}
+.iconRedes{
+    display: inline-block;
+}
+.iconRedes:hover{
+    zoom: 98%;
 }

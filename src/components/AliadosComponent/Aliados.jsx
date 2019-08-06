@@ -19,10 +19,10 @@ class Aliados extends Component {
                 <div className="row ">
                     <div className="col-0 col-md-2">
                     </div>
-                    <div className="col-md-8 col-12 aliados__text text-center mt-5">
+                    <div className="col-md-8 col-12 aliados__text text-center ">
 
                         <div className="aliados__text-description ">
-                            <h2>Quienes Somos</h2>
+                            <h2 className="mb-5" >Quienes Somos</h2>
 
                             <p className="mt-3">
                                 Somos una alianza entre MAKAIA, Agile Innova y E-volution:
@@ -38,7 +38,6 @@ class Aliados extends Component {
                     <div className="col-12 aliados__logos p-5 text-center">
                         <div className="col-12 mb-5">
 
-                            <p>Una iniciativa de:</p>
                             <img className="col-6 col-md-2 mx-3 my-2" src={logo} alt="hola" />
                             <img className="col-6 col-md-2 mx-3 my-2" src={logo1} alt="hola" />
                             <img className="col-6 col-md-2 mx-3 my-2" src={logo2} alt="hola" />

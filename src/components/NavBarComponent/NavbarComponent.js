@@ -27,10 +27,10 @@ class Navbar extends React.Component {
         <div className="collapse navbar-collapse" id="collapsibleNavbar">
           <ul className="navbar-nav " id='contItem'>
             <li className="nav-item">
-              <a className="nav-link" href="/">  INICIO  </a>
+              <a className="nav-link" href="#home">  INICIO  </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="/">  CURSOS  </a>
+              <a className="nav-link" href="#cursos">  CURSOS  </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="/"> INSCRIBETE </a>

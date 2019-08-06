@@ -117,7 +117,12 @@ class CardData extends React.Component {
         console.log('2/4. render()');
         return (
 
-            <div className="row  py-5 px-3 ">
+            <div className="row  py-5 px-3 " id="#cursos">
+                <div className="col-12 text-center mb-5 ">
+                    <h2>
+                        Nuestros cursos
+                    </h2>
+                </div>
 
                 {this.state.data.map(
                     (cosa, i) => {

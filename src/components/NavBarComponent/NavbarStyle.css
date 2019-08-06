@@ -1,20 +1,9 @@
 .btn-language{
     margin-right: 2vh;
 }
-.btn-language-eu{
-    font-family: '';
-}
-body{
-
-    list-style:none;
-}
 
 #header{
-
     width: 100%;
-    position: fixed;
-    z-index: 100;
-
 }
 
 #brand{
@@ -38,7 +27,7 @@ body{
 
     font-size: 2.7vh;
   
-    font-weight: 600;
+    font-weight: 500;
     position: relative;
 
     color:gray;

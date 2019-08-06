@@ -1,15 +1,13 @@
 .hero__background{
-    height: 100vh;
+    min-height: 70vh;
 }
 .hero__media-image{
-    padding: 5%;
+    padding: 30$;
 }
 .hero__background img{
-    
+
     max-width: 50%;
-}
+}%
 .hero__media-title h1{
-    font-family: 'Red Hat Display', sans-serif;
-    font-weight: 700;
 font-size: 5rem;
 }
