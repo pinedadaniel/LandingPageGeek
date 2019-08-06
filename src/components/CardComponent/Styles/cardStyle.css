@@ -10,10 +10,6 @@ section .section-title {
     text-transform: uppercase;
 }
 
-#team .card {
-    border: none;
-    background: #ffffff;
-}
 
 .image-flip:hover .backside,
 .image-flip.hover .backside {
@@ -87,18 +83,14 @@ section .section-title {
     transform-style: preserve-3d;
 }
 
-.frontside .card,
-.backside .card {
-    
-}
-
 
 .frontside .card .card-body img {
     height: 150px;
     width: 150px;
-    border-radius: 50%;
+   
 }
 
-.card-text{
-    max-height: 70%
+.card-body{
+    height: 400px;
 }
+
