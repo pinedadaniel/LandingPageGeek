@@ -1,14 +1,21 @@
 import React from 'react';
 import "../FooterComponent/FooterStyle.css";
-import brand from '../../images/brand.png';
-//import flagCol from '../../images/colombia.png';
-//import flagEu from '../../images/eeuu.png';
+import twitter from '../../images/twitter.svg';
+import facebook from '../../images/facebook.svg';
+import youtube from '../../images/youtube.svg';
+import linkedin from '../../images/linkedin.svg';
+import phone from '../../images/phone.svg';
+import cell from '../../images/cell.svg';
+import location from '../../images/location.svg';
+import email from '../../images/email.svg';
 import { Link } from 'react-router-dom';
 
 
 class Footer extends React.Component {
     render(){
         return (
+          <React.Fragment> 
+         
             <footer class="fixed-bottom page-footer font-small blue pt-4">
 
             <div class="container-fluid text-center text-md-left">
@@ -20,8 +27,8 @@ class Footer extends React.Component {
                 <div class="col-md-6 mt-md-0 mt-3">
           
                
-                  <h5 class="text-uppercase">Footer Content</h5>
-                  <p>Here you can use rows and columns to organize your footer content.</p>
+                  <h5 class="text-uppercase textFooterTittle">academia geek!</h5>
+                  <p className='textFooterP'> En la Academia potenciamos capacidades para el desarrollo social desde la cooperación, la innovación y la tecnología, Fomentando el Pensamiento critico y diferente. </p>
           
                 </div>
            
@@ -32,46 +39,53 @@ class Footer extends React.Component {
                 <div class="col-md-3 mb-md-0 mb-3">
           
            
-                  <h5 class="text-uppercase">Links</h5>
+                  <h5 class="text-uppercase linkstittleFooter">contactanos</h5>
           
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#!">Link 1</a>
+                      <a href="#!" class="linkFooter"><img src={phone} className='' width='20'/> (574) 4480374</a>
                     </li>
                     <li>
-                      <a href="#!">Link 2</a>
+                      <a href="#!"class="linkFooter"><img src={cell} className='' width='20'/> (57) 3207610176</a>
                     </li>
                     <li>
-                      <a href="#!">Link 3</a>
+                      <a href="#!"class="linkFooter"><img src={email} className='' width='20'/> info@makaia.org</a>
                     </li>
                     <li>
-                      <a href="#!">Link 4</a>
+                      <a  href="https://www.google.es/maps/@6.235194,-75.5708941,18.5z" target='_blank' class="linkFooter"><img src={location} className='' width='20'/> Carrera 43 A # 34 – 155. Almacentro, Oficina 701
+                        Medellín, Colombia.</a>
                     </li>
                   </ul>
-          
+                 
                 </div>
               
-          
+            
                
                 <div class="col-md-3 mb-md-0 mb-3">
           
             
-                  <h5 class="text-uppercase">Links</h5>
+                  <h5 class="text-uppercase linkstittleFooter">Siguenos</h5>
           
                   <ul class="list-unstyled">
                     <li>
-                      <a href="#!">Link 1</a>
+                      <a href="https://www.facebook.com/Makaiaorg"> <img src={facebook} className='iconRedes' width='32'/> </a>
                     </li>
                     <li>
-                      <a href="#!">Link 2</a>
+                      <a href="https://twitter.com/Makaiaorg">
+                        <img src={twitter} className='iconRedes' width='32'/></a>
                     </li>
                     <li>
-                      <a href="#!">Link 3</a>
+                      <a href="https://www.youtube.com/channel/UCSwYcQxM_DyO_VNqglgmvzQ"><img src={youtube}  className='iconRedes'width='32'/></a>
                     </li>
                     <li>
-                      <a href="#!">Link 4</a>
+                      <a href="https://es.linkedin.com/"><img src={linkedin} className='iconRedes' width='32'/></a>
                     </li>
-                  </ul>
+              
+         
+                    <li>
+                      <a href="#!" className='politics'>Consulta nuestra politica de tratamiento de Datos</a>
+                    </li>
+                    </ul>
           
                 </div>
        
@@ -81,14 +95,15 @@ class Footer extends React.Component {
           
             </div>
            
-          
-          
-            <div class="footer-copyright text-center py-3">© 2018 Copyright:
-              <a href="https://mdbootstrap.com/education/bootstrap/"> MDBootstrap.com</a>
+           
+          <hr/>
+            <div class="footer-copyright text-center py-3 Copyright">© 2018 Copyright:
+              <a href="https://makaia.org/es/academiageek/"> academiageek.com  </a> All Rights Reserved
             </div>
         
           
           </footer>
+          </React.Fragment>
 
 
         );

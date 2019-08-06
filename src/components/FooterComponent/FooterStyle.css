@@ -1,4 +1,47 @@
 footer{
-    position: absolute;
-    top: 99vh;
+    background: #03203a;
+}
+
+.textFooterTittle{
+color:white;
+font-family: 'Segeo Ui';
+font-size: 2vw;
+    
+}
+.textFooterP{
+color: white;
+font-family: 'Segeo Ui';
+font-size: 1.4vw;
+}
+.linkstittleFooter{
+    color: white;
+font-family: 'Segeo Ui';
+}
+
+hr{
+   
+    background:gray;
+}
+
+.Privacy{
+    
+}
+.politics{
+    color: white;
+    font-family: 'Segeo Ui';
+    font-size: 1.1vw;
+}
+.Copyright{
+    color: white;
+
+}
+.linkFooter{
+    color: white;
+    text-decoration: none;
+}
+.iconRedes{
+    display: inline-block;
+}
+.iconRedes:hover{
+    zoom: 98%;
 }
